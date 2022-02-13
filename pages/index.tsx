@@ -4,6 +4,8 @@ import Image from 'next/image'
 
 import styles from '../styles/Home.module.css'
 
+import CAREERS from '../constants/career'
+
 const Home: NextPage = () => {
   return (
     <>
@@ -32,8 +34,43 @@ const Home: NextPage = () => {
 
         <section className={styles.anotherSection}>
           <h1>
-            {'Careers & Projects'}
+            Careers
           </h1>
+
+          <div
+            className={styles.careersContainer}
+          >
+            {
+              CAREERS.map(({ name, timeRange, position }, index) => {
+                return (
+                  <div
+                    key={name}
+                    className={styles.careerContainer}
+                  >
+                    {CAREERS.length - index}
+
+                    <div
+                      className={styles.careerNameLabel}
+                    >
+                      {name}
+                    </div>
+
+                    <div
+                      className={styles.careerTimeRangeLabel}
+                    >
+                      {timeRange}
+                    </div>
+
+                    <div
+                      className={styles.careerPositionLabel}
+                    >
+                      {position}
+                    </div>
+                  </div>
+                )
+              })
+            }
+          </div>
         </section>
 
         <section className={styles.anotherSection}>

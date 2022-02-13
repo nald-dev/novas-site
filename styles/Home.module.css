@@ -12,7 +12,7 @@
 
 .photoContainer {
   height: calc(200px + 12px);
-  border-radius: 50%;
+  border-radius: 20px;
   border: 6px solid black;
   margin-right: 50px;
   overflow: hidden;
@@ -36,7 +36,7 @@
   text-decoration: underline;
 }
 
-.anotherSection {
+.section {
   scroll-snap-align: start;
   min-height: 100vh;
   padding: 4rem 2rem;
@@ -45,9 +45,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 250px;
 }
 
-.anotherSection h1 {
+.section h1 {
   color: gray;
   font-size: 2.75rem;
   text-align: center;
@@ -59,7 +60,6 @@
   flex-wrap: wrap;
   justify-content: center;
   max-width: 800px;
-  padding-bottom: 250px;
 }
 
 .careerContainer {
@@ -72,8 +72,14 @@
   padding: 20px;
 }
 
-.careerContainer:hover {
-  background-color: rgb(235, 235, 235);
+.presentCareerContainer {
+  background-color: skyblue;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  flex-grow: 1;
+  padding: 20px;
 }
 
 .careerNameLabel {
@@ -89,6 +95,29 @@
 .careerPositionLabel {
   margin-top: 10px;
 }
+
+.skillsContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 800px;
+}
+
+.skill {
+  background-color: gainsboro;
+  border-radius: 10px;
+  font-size: 1.25rem;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  flex-grow: 1;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+}
+
+
 
 @media (max-width: 660px) {
   .introduction {

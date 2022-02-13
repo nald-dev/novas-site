@@ -16,7 +16,7 @@ const Home: NextPage = () => {
       <main className={styles.main}>
         <section className={styles.introduction}>
           <div className={styles.photoContainer}>
-            <Image  className={styles.photo} src="/images/novas-photo.jpg" alt="me" width="260" height="260" />
+            <Image  className={styles.photo} src="/images/novas-photo.jpg" alt="me" width="200" height="200" />
           </div>
 
           <h1 className={styles.title}>
@@ -32,13 +32,13 @@ const Home: NextPage = () => {
 
         <section className={styles.anotherSection}>
           <h1>
-            Skills
+            {'Careers & Projects'}
           </h1>
         </section>
 
         <section className={styles.anotherSection}>
           <h1>
-            {'Careers & Projects'}
+            Skills
           </h1>
         </section>
 
